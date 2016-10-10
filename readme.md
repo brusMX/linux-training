@@ -2,13 +2,15 @@
 
 
 1.	Setting up the environment – 1h
-    1.	Deploy
-        1.	Azure-cli
+    1.	Generate SSH keys
+        1. [Bash](content/01-set-up/01-key-generation-bash.md)
+        1. [Putty](content/01-set-up/01-key-generation-putty.md)
+    1.	[Deploy VM with Azure-cli](content/01-set-up/02-deploy-vm.md)
         1.	MDADM 
         1.	ARM
     1.	Connect to VM
-        1.	SSH keygen
-        1.	SSH config files
+        1.	[Bash](content/01-set-up/03-connect-to-vm-bash.md)
+        1.  [Putty](content/01-set-up/03-connect-to-vm-putty.md)
     1.	Package management
         1.	Deploy web server
         1.	Put some basic commands like sudo, cp, cd, ls, etc.
