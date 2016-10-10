@@ -1,7 +1,5 @@
 # Connect to your VM using Bash (For Mac, Linux and Windows 10 with Bash installed)
 
-1. Make sure to copy the full public key from the terminal and paste it to you VM's definition.
-    ![alt text][set-vm-up]
 
 2. SSH into your VM. Make sure you replace "myUserName" with your VM's user name and the url should be your "DNS name" or the IP from the VM's details.
 
@@ -105,4 +103,3 @@ With this change done you can easily start your SSH connection by only using the
             brus@brusulubuntu:~$ 
 
 
-[set-vm-up]: ../img/set-vm-up.jpg "Fill it up with your info."
