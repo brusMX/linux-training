@@ -24,21 +24,21 @@
     1.	Git integration and deployment
     
 3.	Go live – 1h
-    1.	Network configuration, open ports, endpoints in azure (portal, cli,)
+    1.	Network configuration, open ports, endpoints in azure (portal, cli)
     1.	Vnets
     1.  Rewrite rules
     1.	Custom script extensions
-    1.	Export VHD
+    1.	[Export VHD](https://github.com/brusMX/linux-training/blob/master/content/03-go-prod/capture-azure-vm.md)
     1.  Scheduling jobs
     
 4.	Logs and (security) tips - 1.5h
-    1.  Install OMS Agent
+    1.  [Install OMS Agent](https://github.com/brusMX/linux-training/blob/master/content/04-logs-security/install-OMS-Agent-for-Linux.md)
     1.	Check logs (access log, error log, php verbose mode)
-    1.	Check processes and users running them (Identify possible threats
+    1.	Check processes and users running them (Identify possible threats)
     1.	Check for unauthorized access and shells running in the VM
     1.	Check open ports with nmap
     1.	Provide a cheat sheet of commands
-    9.	Importing/Exporting a Linux VM VHD from AWS (XEN citrix) or VMware (1HR) OGUZ
+    9.	Importing/Exporting a Linux VM VHD from AWS or VMware
     1.	WA Linux Agent
 
     
