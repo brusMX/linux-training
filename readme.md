@@ -19,12 +19,11 @@
     1.	scp, wget, curl, tar
     1.	permissions
     1.	explore files
-    
-3.	Configure mongodb
+    3.	Configure mongodb   
     1.	Import database
     1.	Git integration and deployment
     
-4.	Go live – 1h
+3.	Go live – 1h
     1.	Network configuration, open ports, endpoints in azure (portal, cli,)
     1.	Vnets
     1.  Rewrite rules
@@ -32,15 +31,18 @@
     1.	Export VHD
     1.  Scheduling jobs
     
-5.	Logs and (security) tips - 0.5h
+4.	Logs and (security) tips - 1.5h
     1.  Install OMS Agent
     1.	Check logs (access log, error log, php verbose mode)
     1.	Check processes and users running them (Identify possible threats
     1.	Check for unauthorized access and shells running in the VM
     1.	Check open ports with nmap
     1.	Provide a cheat sheet of commands
+    9.	Importing/Exporting a Linux VM VHD from AWS (XEN citrix) or VMware (1HR) OGUZ
+    1.	WA Linux Agent
+
     
-6.	Containers - 2h
+5.	Containers - 2h
     1.	Docker intro
     1.	Deploy MEAN
     1.	Stateful vs stateless
@@ -48,12 +50,23 @@
         1.	Deploy git code in dev machine
         1.	Commit changes to code
         1.	Publish changes to production server (Release work)
-        1.	(opt) Mount volume in personal computer (Mike Coleman’s demo)
+        1.	Mount volume in personal computer
         
-7.	ACS - 1h
+6.	ACS - 1h
     1.	Docker Swarm
     1.	DC/OS
     
-8.	Linux AppServices (Tuxedo)
+7.	Linux AppServices (Tuxedo)
     1.	Intro
     1.	Demo deploying Wordpress from git
+
+8.	Linux takeaways (MKTG) BRUNO OGUZ
+    1.	Advantages of running linux on Azure
+    2.	Keypoints where Azure is better than AWS
+    3.	When to choose what Linux distro
+    4.	When to use which container/orchestration technology
+        1.	Open shift
+        2.	Swarm
+        3.	DC/OS
+        4.	Marathon
+        5.	Kubernetes
