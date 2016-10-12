@@ -32,6 +32,7 @@
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
+    "uniqueDnsLabelPrefix": "[concat('store', uniquestring(resourceGroup().id))]",
     "storageAccountType": "Standard_LRS",
     "publicIPAddressName": "[concat(uniquestring(parameters('vmName')), 'publicip')]",
     "publicIPAddressType": "Dynamic",
@@ -58,7 +59,10 @@
       "name": "[variables('publicIPAddressName')]",
       "location": "[resourceGroup().location]",
       "properties": {
-        "publicIPAllocationMethod": "[variables('publicIPAddressType')]"
+        "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
+        "dnsSettings": {
+          "domainNameLabel": "[variables('uniqueDnsLabelPrefix')]"
+        }
       }
     },
     {
