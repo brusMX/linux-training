@@ -17,3 +17,16 @@ cat ~/.ssh/id_rsa.pub
 ```Shell
 C:\Users\USERNAME\AppData\Local\lxss\home\USERNAME\.ssh
 ```
+
+
+## Useful
+
+1. Go back to your home directory
+    ```Shell
+    cd
+    ```
+    or 
+    ```Shell
+    cd ~
+    ```
+1. See you

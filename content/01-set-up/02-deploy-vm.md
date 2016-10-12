@@ -32,16 +32,36 @@
     ```
     For me it would be something like this:
     ```Shell
-    azure resource create rhel-demo -l westus
+    azure group create my-centos-demo-name -l westus
     ```
 1. Now lets deploy the vm using the JSON file of the template
      ```Shell
-    azure group deployment create <resource-group> <my-deployment-name> --template-uri azuredeploy.json
+    azure group deployment create <resource-group> <my-deployment-name> --template-uri <arm-json-uri>
     ```
+    It would look something  like this:
+    ```Shell
+    azure group deployment create my-centos-demo-name centos --template-uri http://104.45.147.168/azuredeploy.json
+    ```
+1. Please provide the values for the an username, ssh public key and a name for the VM.
+1. After a few minutes we will have the following result:
+    ```Shell
+    data:    Outputs            :
+    data:    Name        Type    Value
+    data:    ----------  ------  ------------------------------------------------------
+    data:    sshCommand  String  ssh usuario@XXXXXXXXXXXXXXX.westus.cloudapp.azure.com
+    info:    group deployment create command OK
+    ```
+1. As you can notice we get a suggestion called "sshComand" that allows us to connect to our VM using [bash](content/01-set-up/03-connect-to-vm-bash.md), but we can also use [PuTTY](content/01-set-up/03-connect-to-vm-putty.md)
 
+1. Lets verify our VM using the show command:
+    ```Shell
+    azure vm show <group-name> <vm-name>
+    ```
+    And we can see the details of our VM.
+    Please, take a moment to verify that you have created a CentOS VM with two data disks, a public IP, and a proper FQDN. 
+1. Alternatively, you could set up the VM fro the portal, just make sure you add you SSH public key.
 
-1. Make sure to copy the full public key from the terminal and paste it to you VM's definition.
     ![alt text][set-vm-up]
 
 
-[set-vm-up]: /img/set-vm-up.jpg "Fill it up with your info."
+[set-vm-up]:../../img/set-vm-up.jpg "Fill it up with your info."
