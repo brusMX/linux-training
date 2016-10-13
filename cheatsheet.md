@@ -22,11 +22,31 @@ C:\Users\USERNAME\AppData\Local\lxss\home\USERNAME\.ssh
 ## Useful
 
 1. Go back to your home directory
+
     ```Shell
     cd
     ```
+
     or 
+
     ```Shell
     cd ~
     ```
-1. See you
+
+1. Copy a file from your host to a remote host
+
+
+
+    ```Shell
+    scp foobar.txt your_username@remotehost.edu:/some/remote/directory
+    ```
+
+1. Guide to attach new [disks](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-attach-disk/)
+
+1. [Move Mongo database to new disk](http://stackoverflow.com/questions/5961145/changing-mongodb-data-store-directory)
+
+1. whenever you don't know where there is a tool, you can use provide to look for it
+
+    ```Shell
+    yum provides killall
+    ```
